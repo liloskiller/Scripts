@@ -9,5 +9,3 @@ wait(0.5)
 game:GetService("ReplicatedStorage").OwnedDimensionStars:InvokeServer("Peach Desert")
 game:GetService("ReplicatedStorage").SetDimension:FireServer("Peach Desert")
 until nil
-
-Game Link: https://web.roblox.com/games/183364845/MOON-Speed-Run-4
