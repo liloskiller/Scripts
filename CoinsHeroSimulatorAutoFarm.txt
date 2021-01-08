@@ -1,5 +1,11 @@
+while wait(0.5) do
+   game:GetService("ReplicatedStorage").Remotes.Sell:FireServer()
+end
 while wait() do
    game:GetService("ReplicatedStorage").CoinToPlayer:FireServer(1222222222)
+end
+while wait(0.5) do
+   game:GetService("ReplicatedStorage").Remotes.Sell:FireServer()
 end
 while wait() do
    game:GetService("ReplicatedStorage").CoinToPlayer:FireServer(1222222222)
