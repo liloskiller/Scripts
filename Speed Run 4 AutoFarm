@@ -1,0 +1,13 @@
+--Game Link: https://web.roblox.com/games/183364845/MOON-Speed-Run-4
+--Made with love by liloskiller#4269
+repeat
+for i = 1,30 do
+wait()
+game:GetService("ReplicatedStorage").BeatLevel:FireServer(31.43918967247,"Thank you for using my script!","",true)
+end
+wait(0.5)
+game:GetService("ReplicatedStorage").OwnedDimensionStars:InvokeServer("Peach Desert")
+game:GetService("ReplicatedStorage").SetDimension:FireServer("Peach Desert")
+until nil
+
+Game Link: https://web.roblox.com/games/183364845/MOON-Speed-Run-4
