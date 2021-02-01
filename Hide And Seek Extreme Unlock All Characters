@@ -1,0 +1,23 @@
+local Characters = game:GetService("Players").LocalPlayer.Inventory.Characters
+local Sophia = Instance.new("Folder")
+Sophia.Name = "Sophia"
+Sophia.Parent = Characters
+local Jacob = Instance.new("Folder")
+Jacob.Name = "Jacob"
+Jacob.Parent = Characters
+local Jake = Instance.new("Folder")
+Jake.Name = "Jake"
+Jake.Parent = Characters
+local Yeti = Instance.new("Folder")
+Yeti.Name = "Yeti"
+Yeti.Parent = Characters
+local Ice_Bear = Instance.new("Folder")
+Ice_Bear.Name = "Ice Bear"
+Ice_Bear.Parent = Characters
+local Grizzly = Instance.new("Folder")
+Grizzly.Name = "Grizzly"
+Grizzly.Parent = Characters
+local Panda = Instance.new("Folder")
+Panda.Name = "Panda"
+Panda.Parent = Characters
+print("Success!")
