@@ -1,0 +1,92 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+local Library = {}
+function Library:CreateMain()
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local OptionFrame = Instance.new("Frame")
+local Option = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local UIListLayout = Instance.new("UIListLayout")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+ScreenGui.Parent = game:GetService("CoreGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MainFrame.BackgroundColor3 = Color3.fromRGB(33, 39, 32)
+MainFrame.BackgroundTransparency = 0.400
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0, 648, 0, 214)
+MainFrame.Size = UDim2.new(0.327906966, 0, 0.742553174, 0)
+
+TextLabel.Parent = MainFrame
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.5, 0, 0.0985959917, 0)
+TextLabel.Size = UDim2.new(0.709219873, 0, 0.156739816, 0)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Mod Menu"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UITextSizeConstraint.Parent = TextLabel
+UITextSizeConstraint.MaxTextSize = 54
+
+OptionFrame.Name = "OptionFrame"
+OptionFrame.Parent = MainFrame
+OptionFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+OptionFrame.BackgroundColor3 = Color3.fromRGB(33, 39, 32)
+OptionFrame.BackgroundTransparency = 0.300
+OptionFrame.BorderSizePixel = 0
+OptionFrame.Position = UDim2.new(0.5, 0, 0.546198308, 0)
+OptionFrame.Size = UDim2.new(1, 0, 0.733377516, 0)
+
+TextLabel_2.Parent = Option
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)	
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.226950347, 0, 0.476190478, 0)
+TextLabel_2.Size = UDim2.new(0.734042525, 0, 0.980392158, 0)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "[Option]"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 35.000
+TextLabel_2.TextWrapped = true
+
+UITextSizeConstraint_2.Parent = TextLabel_2
+UITextSizeConstraint_2.MaxTextSize = 41
+
+UIListLayout.Parent = OptionFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+UIAspectRatioConstraint.Parent = MainFrame
+	UIAspectRatioConstraint.AspectRatio = 0.808
+	local UseLibrary = {}
+	function UseLibrary:NewOption(name)
+		Option.Name = "Option"
+		Option.Parent = OptionFrame
+		Option.AnchorPoint = Vector2.new(0.5, 0.5)
+		Option.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Option.BorderSizePixel = 0
+		Option.Position = UDim2.new(0.5, 0, 0.114511356, 0)
+		Option.Size = UDim2.new(1, 0, 0.165844038, 0)
+	end
+	return UseLibrary;
+end
+return Library;
